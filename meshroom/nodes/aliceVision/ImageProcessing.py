@@ -248,6 +248,7 @@ class ImageProcessing(desc.CommandLineNode):
             label='Output sfmData',
             description='Output sfmData.',
             value=desc.Node.internalFolder + 'sfmData.abc',
+            group='',  # do not export on the command line
             uid=[],
         ),
         desc.File(
@@ -255,7 +256,6 @@ class ImageProcessing(desc.CommandLineNode):
             label='Output Images Folder',
             description='Output Images Folder.',
             value=desc.Node.internalFolder,
-            group='',  # do not export on the command line
             uid=[],
         ),
     ]
