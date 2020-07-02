@@ -232,6 +232,16 @@ class ImageProcessing(desc.CommandLineNode):
             ),
         ]),
         desc.ChoiceParam(
+                name='outputFormat',
+                label='Output Image Format',
+                description='Allows you to choose the format of the output image.',
+                value='rgba',
+                values=['rgba', 'rgb', 'grayscale'],
+                exclusive=True,
+                advanced=True,
+                uid=[0],
+            ),
+        desc.ChoiceParam(
             name='verboseLevel',
             label='Verbose Level',
             description='verbosity level (fatal, error, warning, info, debug, trace).',
